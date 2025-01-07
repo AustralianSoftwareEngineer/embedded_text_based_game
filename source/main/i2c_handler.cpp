@@ -28,8 +28,15 @@ static void FillScreen(unsigned char data) {
     }
 }
 
-static void PushToScreen(unsigned char data) {
+/*static void PushToScreen(unsigned char data) {
     WriteToScreen(false, data);
+}*/
+
+static void PushToScreen(unsigned char *data) {
+  for (int i = 0; i < 6; i++)
+  {
+    WriteToScreen(false, data[i]);
+  }
 }
 
 static void FillScreenAlternating(unsigned char data, unsigned char data_other) {

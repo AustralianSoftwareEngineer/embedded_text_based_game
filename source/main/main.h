@@ -4,5 +4,6 @@
 #include <Wire.h>
 #include <Arduino.h>
 #include "i2c_handler.h"
+#include "text_handler.h"
 
 #endif
