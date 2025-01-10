@@ -8,15 +8,17 @@
 class CombatScene {
 
 public:
-  int player_health;
-  int enemy_health;
+
+  unsigned char player_health[4] = {'5','2','8','7'};
+  unsigned char enemy_health[4] = {'0','6','1','2'}; 
+  //unsigned char 
+
 
   CombatScene() {
-    player_health = 1;
-    enemy_health = 1; 
   }
 
-  DisplayHealth();
+  void DisplayHealth();
+  uint8_t HealthDamageHandler(unsigned char[],unsigned char[]);
 //private:
 
 };

@@ -21,6 +21,7 @@ static void WriteToScreen(bool is_command_byte, unsigned char data) {
 }
 
 static void FillScreen(unsigned char data) {
+  MoveCursor(0x00, 0x00);
     for(uint16_t i = 0; i < ktotal_bytes; i++)
     {
         WriteToScreen(false, data);

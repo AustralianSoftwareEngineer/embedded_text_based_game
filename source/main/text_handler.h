@@ -4,6 +4,7 @@
 #include "main.h"
 
 void TextPusher(unsigned char*, uint8_t);
-const void TextPusherArray(unsigned char*, uint8_t);
+void TextPusherArray(unsigned char*, uint8_t);
+//void TextPusherNumberHandler(char[]);
 
 #endif

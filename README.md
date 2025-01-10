@@ -9,3 +9,7 @@ Made a game design document for fun: https://docs.google.com/document/d/17RU-tKu
 Added functionality to take a string input (char array) and display it as text on the screen. Wrapping is not handled as of yet. Building prototype currently.
 
 ![HELLO HELLO HELLO](./media/hello%20hello%20hello%20hello.jpg)
+
+
+Added reference to Grinding Gear Games and also used a different display of the same resolution and operates off the same micro controller.
+![It looks even more cool in Yellow!](./media/reference%20to%20ggg.jpg)
