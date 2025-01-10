@@ -100,5 +100,4 @@ static void DisplaySetupCommands() {
     WriteToScreen(true, 0xA6); // Set Display in Normal Mode, 1 = ON, 0 = OFF
     WriteToScreen(true, 0x2E); // Deactivate scroll
     WriteToScreen(true, 0xAF); // Display ON in normal mode
-
 }
