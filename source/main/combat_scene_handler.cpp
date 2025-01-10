@@ -10,7 +10,6 @@ void CombatScene::DisplayHealth()
   TextPusherArray(player_name, sizeof(player_name));
   MoveCursor(0x07, 0x00);
   TextPusherArray("HP: ", 4);
-  Serial.println("Pushing player health to be displayed.");
   TextPusherArray(player_health,4);
 
   // Enemy
