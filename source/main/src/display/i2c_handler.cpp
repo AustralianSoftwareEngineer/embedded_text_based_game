@@ -1,4 +1,4 @@
-#include "i2c_handler.h"
+#include "i2c_handler.hpp"
 
 const char kscreen_address = 0x3C;
 const uint16_t ktotal_bytes  = 1024;

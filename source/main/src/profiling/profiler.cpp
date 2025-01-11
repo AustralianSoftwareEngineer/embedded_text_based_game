@@ -1,4 +1,4 @@
-#include "profiler.h"
+#include "profiler.hpp"
 
 //There is an over-head because of the system calls that could be optimised out and instead raw profiling in-line in the function could be done.
 

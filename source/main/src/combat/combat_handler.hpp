@@ -1,7 +1,7 @@
 #ifndef COMBAT_HANDLER_H
 #define COMBAT_HANDLER_H
 
-#include "../main.h"
+#include "../../main.hpp"
 
 enum class CombatActions {
     kAttack = 0,

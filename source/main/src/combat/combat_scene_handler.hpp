@@ -1,7 +1,7 @@
 #ifndef COMBAT_SCENE_HANDLER_H
 #define COMBAT_SCENE_HANDLER_H
 
-#include "../main.h"
+#include "../../main.hpp"
 
 //Paused work on this to look at profiling and think of better naming conventions.
 

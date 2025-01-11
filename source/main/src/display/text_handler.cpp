@@ -1,4 +1,4 @@
-#include "text_handler.h"
+#include "text_handler.hpp"
 
 const unsigned char ktext_in_bytes_array[][7] = {
     {0x1E, 0x05, 0x05, 0x05, 0x1E, 0x00, 'A'}, // A 0
@@ -43,7 +43,7 @@ const unsigned char ktext_in_bytes_array[][7] = {
     {0x00, 0x17, 0x00, 0x00, 0x00, 0x00, '!'}  // ! 38
 };
 
-void TextPusherArray(unsigned char *message, uint8_t size_of_message) 
+void TextPusherArray(const unsigned char *message, uint8_t size_of_message) 
 {
     for (uint8_t i = 0; i < size_of_message; i++)
     {

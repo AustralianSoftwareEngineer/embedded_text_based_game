@@ -1,4 +1,4 @@
-#include "combat_scene_handler.h"
+#include "combat_scene_handler.hpp"
 
 //Paused work on this to look at profiling and think of better naming conventions.
 

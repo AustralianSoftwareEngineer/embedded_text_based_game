@@ -1,7 +1,7 @@
 #ifndef PROFILER_H
 #define PROFILER_H
 
-#include "../main.h"
+#include "../../main.hpp"
 
 void profileThisStart();
 void profileThisEnd();
