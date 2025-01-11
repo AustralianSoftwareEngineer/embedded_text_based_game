@@ -1,7 +1,7 @@
 #ifndef I2C_HANDLER_H
 #define I2C_HANDLER_H
 
-#include "./main.h"
+#include "../main.h"
 #include <stdint.h>
 
 void WriteToScreen(const bool, unsigned char);

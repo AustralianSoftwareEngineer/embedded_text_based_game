@@ -25,7 +25,6 @@ static void FillScreen(unsigned char data) {
     for(uint16_t i = 0; i < ktotal_bytes; i++)
     {
         WriteToScreen(false, data);
-        delay(1);
     }
 }
 
@@ -36,6 +35,7 @@ static void FillScreen(unsigned char data) {
 static void PushToScreen(unsigned char *data) {
   for (int i = 0; i < 6; i++)
   {
+    delay(1);
     WriteToScreen(false, data[i]);
   }
 }

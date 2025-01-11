@@ -6,7 +6,7 @@ void CombatScene::DisplayHealth()
 {
   // Player
   MoveCursor(0x06, 0x00);
-  unsigned char player_name[8] = {"Rod"};
+  unsigned char player_name[] = {"VYNNIE"};
   TextPusherArray(player_name, sizeof(player_name));
   MoveCursor(0x07, 0x00);
   TextPusherArray("HP: ", 4);
@@ -14,7 +14,7 @@ void CombatScene::DisplayHealth()
 
   // Enemy
   MoveCursor(0x06, 0x50);
-  unsigned char enemy_name[3] = {"GGG"};
+  unsigned char enemy_name[] = {"KETER"};
   TextPusherArray(enemy_name, sizeof(enemy_name));
   MoveCursor(0x07, 0x50);
   TextPusherArray(enemy_health,4);

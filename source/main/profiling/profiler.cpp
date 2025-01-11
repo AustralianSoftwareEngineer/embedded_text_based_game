@@ -1,6 +1,6 @@
 #include "profiler.h"
-//Due to the way arduino time libraries work, time chararistics have limited usability.
-//There is over-head in the form of function calls happening here, I'm happy to ignore that extra cost based on use case.
+
+//There is an over-head because of the system calls that could be optimised out and instead raw profiling in-line in the function could be done.
 
 
 long start_function_time_us = 0;
