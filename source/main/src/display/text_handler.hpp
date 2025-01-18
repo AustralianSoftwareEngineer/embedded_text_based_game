@@ -3,8 +3,11 @@
 
 #include "../../main.hpp"
 
-void TextPusher(unsigned char*, uint8_t);
-void TextPusherArray(const unsigned char*, uint8_t);
+void I2CDialoguePusher(const unsigned char*, uint8_t);
+void I2CTextPusher(const unsigned char*, uint8_t);
+unsigned char I2CTextVerification(unsigned char);
+void I2CDialogueFromFlashPusher(unsigned char);
+//void TextPusher(unsigned char*, uint8_t);
 //void TextPusherNumberHandler(char[]);
 
 #endif

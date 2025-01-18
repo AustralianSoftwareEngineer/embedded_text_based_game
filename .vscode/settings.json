@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.idl": "cpp",
+        "buffer": "cpp"
+    }
+}

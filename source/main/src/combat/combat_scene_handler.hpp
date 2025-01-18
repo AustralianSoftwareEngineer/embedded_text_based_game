@@ -9,12 +9,16 @@ class CombatScene {
 
 public:
 
-  unsigned char player_health[4] = {'0','1','0','0'};
-  unsigned char enemy_health[4] = {'0','1','0','0'}; 
+  unsigned char player_health[4] = {'0','1','0','8'};
+  unsigned char enemy_health[4] = {'0','0','2','5'}; 
   //unsigned char 
 
 
   CombatScene() {
+  }
+
+  ~CombatScene() {
+    
   }
 
   void DisplayHealth();

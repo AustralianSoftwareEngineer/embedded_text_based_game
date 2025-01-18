@@ -5,7 +5,7 @@ const uint16_t ktotal_bytes  = 1024;
 const uint8_t kmax_vertical_lines  = 7;
 const uint8_t kmax_horizontal_lines  = 128;
 
-uint8_t previous_line_number   = 0;             // Save the specified line number
+uint8_t previous_line_number = 0;             // Save the specified line number
 uint8_t previous_cursor_position = 0;          // Save the specified cursor position
 
 
@@ -27,6 +27,16 @@ static void FillScreen(unsigned char data) {
         WriteToScreen(false, data);
     }
 }
+
+static void FillScreen(unsigned char data, uint8_t line, uint8_t coloum) {
+  MoveCursor(line, coloum);
+  uint16_t clear_till_end_of_screen = (kmax_vertical_lines - line + 1) * (kmax_horizontal_lines - coloum);
+    for(uint16_t i = 0; i < clear_till_end_of_screen; i++)
+    {
+        WriteToScreen(false, data);
+    }
+}
+
 
 /*static void PushToScreen(unsigned char data) {
     WriteToScreen(false, data);
@@ -54,16 +64,14 @@ static void FillScreenAlternating(unsigned char data, unsigned char data_other) 
     }
 }
 
-static void  MoveToNextLine() {
-  previous_line_number++;
-  previous_line_number = (previous_line_number & kmax_vertical_lines);
-  MoveCursor(previous_line_number,0);
+static void MoveToNextLine(uint8_t line) {
+  line = (line & kmax_vertical_lines);
+  MoveCursor(line,0);
 }
 
 static void MoveCursor(uint8_t new_line, uint8_t new_cursor) {
   if((new_line <= kmax_vertical_lines) && (previous_cursor_position < kmax_horizontal_lines))
   {
-
     WriteToScreen(true, 0x21);                    // cmd for the column start and end address
     WriteToScreen(true, new_cursor);              // column start addr
     WriteToScreen(true, kmax_horizontal_lines-1); // column end addr

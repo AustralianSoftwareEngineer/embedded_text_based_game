@@ -11,4 +11,6 @@
 #include "./src/combat/enemy/enemy.hpp"
 #include "./src/combat/enemy/player.hpp"
 
+#include "./src/narrative/narrative_handler.hpp"
+
 #endif

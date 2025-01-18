@@ -7,9 +7,10 @@
 
 void WriteToScreen(const bool, unsigned char);
 void FillScreen(unsigned char);
+void FillScreen(unsigned char, uint8_t, uint8_t);
 void PushToScreen(unsigned char*);
 void FillScreenAlternating(unsigned char, unsigned char);
-void MoveToNextLine();
+void MoveToNextLine(uint8_t);
 void MoveCursor(uint8_t, uint8_t);
 void DisplaySetupCommands();
 
